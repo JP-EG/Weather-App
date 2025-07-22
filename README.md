@@ -1,2 +1,2 @@
-# Weather-App
-Weather App in React Native
+# Weather-Index
+Weather Index in React Native
