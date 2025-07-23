@@ -11,7 +11,7 @@ const end = formatDate(endDate);
 
 export const useWeatherByLocation = () => {
     const [weather, setWeather] = useState(null);
-    const [city, setCity] = useState<string | null>(null);
+    const [location, setLocation] = useState<string | null>(null);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -28,7 +28,7 @@ export const useWeatherByLocation = () => {
 
                 const data = await response.json();
                 setWeather(data);
-                setCity(data?.location?.name ?? null);
+                setLocation(data?.location ?? null);
             } catch (err) {
                 console.error('Error fetching weather:', err);
             } finally {
@@ -39,5 +39,5 @@ export const useWeatherByLocation = () => {
         fetchLocationAndWeather();
     }, []);
 
-    return { weather, city, loading };
+    return { weather, location, loading };
 };
