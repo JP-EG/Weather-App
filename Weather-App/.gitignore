@@ -30,7 +30,6 @@ yarn-error.*
 .env
 .env*
 ../app.config.js
-app.json
 
 # macOS
 .DS_Store

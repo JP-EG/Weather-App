@@ -1,9 +1,10 @@
 import { Text, StyleSheet, View, Image } from 'react-native';
-import type { Location } from '@/types/location';
+import type { Location } from '@/types/weather';
 import locationImg from '@/assets/images/location.png';
+import React from "react";
 
 type Props = {
-    location?: Location;
+    location: Location | null;
     loading: boolean;
 };
 
@@ -16,7 +17,7 @@ const formatDate = (localtime?: string) => {
     return `${weekday}, ${day} ${month}`;
 };
 
-const WeatherHeaderDetails = ({ location, loading }: Props) => (
+const WeatherHeaderDetails: React.FC<Props> = ({ location, loading }) => (
     <View style={styles.row}>
         <Image source={locationImg} style={styles.icon} />
         <Text style={styles.text}>

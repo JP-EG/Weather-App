@@ -1,4 +1,4 @@
 declare module '*.png' {
-    const content: number; // or 'any' if using Expo
+    const content: number;
     export default content;
 }
