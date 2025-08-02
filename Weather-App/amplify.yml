@@ -7,13 +7,10 @@ backend:
         - npx ampx pipeline-deploy --branch $AWS_BRANCH --app-id $AWS_APP_ID
 frontend:
   phases:
-    preBuild:
-      commands:
-        - cd Weather-App && npm ci
     build:
       commands: []
   artifacts:
-    baseDirectory: Weather-App
+    baseDirectory: ''
     files: []
   cache:
     paths:
