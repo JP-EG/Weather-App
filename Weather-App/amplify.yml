@@ -11,10 +11,9 @@ frontend:
       commands:
         - npm ci
     build:
-      commands:
-        - npm run build
+      commands: []
   artifacts:
-    baseDirectory: Weather-App/build
+    baseDirectory: .
     files:
       - '**/*'
   cache:
