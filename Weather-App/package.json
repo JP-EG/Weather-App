@@ -15,6 +15,7 @@
     "@react-navigation/bottom-tabs": "^7.3.10",
     "@react-navigation/elements": "^2.3.8",
     "@react-navigation/native": "^7.1.6",
+    "aws-amplify": "^6.15.4",
     "dotenv": "^17.2.1",
     "dotenv-expand": "^12.0.2",
     "expo": "~53.0.17",
@@ -45,12 +46,18 @@
     "react-native-webview": "13.13.5"
   },
   "devDependencies": {
+    "@aws-amplify/backend": "^1.16.1",
+    "@aws-amplify/backend-cli": "^1.8.0",
     "@babel/core": "^7.25.2",
     "@types/react": "~19.0.10",
+    "aws-cdk-lib": "^2.204.0",
+    "constructs": "^10.4.2",
+    "esbuild": "^0.25.8",
     "eslint": "^9.25.0",
     "eslint-config-expo": "~9.2.0",
     "react-native-svg-transformer": "^0.20.0",
-    "typescript": "~5.8.3"
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
   },
   "private": true
 }
