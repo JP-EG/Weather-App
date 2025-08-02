@@ -65,14 +65,13 @@ const Index = () => {
         await fetchWeatherForCity(search, setCustomWeather, setCustomLocation, setCustomLoading);
     };
 
-    // Use customWeather if set, otherwise fallback to location-based weather
     const displayWeather = customWeather || weather;
     const displayLocation = customLocation || location;
     const displayLoading = customLoading || loading;
 
     return (
         <TouchableWithoutFeedback onPress={Keyboard.dismiss} accessible={false}>
-            <LinearGradient colors={['#aad6ec', '#81b1ce', '#151269', '#0f1056', '#0f1056']} style={styles.container}>
+            <LinearGradient colors={['#86CEFA', '#73B9EE', '#5494DA', '#3373C4', '#1750AC', '#003396']} style={styles.container}>
                 <View>
                     <SearchBar
                         value={search}
