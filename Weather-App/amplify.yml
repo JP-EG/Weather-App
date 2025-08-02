@@ -8,12 +8,11 @@ backend:
 frontend:
   phases:
     preBuild:
-      commands:
-        - npm ci
+      commands: []
     build:
       commands: []
   artifacts:
-    baseDirectory: .
+    baseDirectory: ./Weather-App
     files:
       - '**/*'
   cache:
